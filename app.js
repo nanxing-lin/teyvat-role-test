@@ -143,7 +143,7 @@
         : `${second.name}更像你性格里没有完全占主导的另一面，${main.name}则是你更容易被看见的部分。`;
 
     resultScreen.innerHTML = `
-      <article class="result-card">
+      <article class="result-card" style="--role-color:${main.color}">
         <div class="result-topline">
           <span class="result-badge">第一共鸣 · ${main.name}</span>
           <span class="result-disclaimer">粉丝趣味解读 · 非官方</span>
@@ -168,7 +168,7 @@
         </section>
 
         <section class="result-section">
-          <div class="second-role">
+          <div class="second-role" style="--second-color:${second.color}">
             <h3>第二像的角色 · ${second.name}</h3>
             <p class="identity">${second.region} · ${second.element} · ${second.identity}</p>
             <p class="role-line">${second.line}</p>
